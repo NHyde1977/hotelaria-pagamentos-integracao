@@ -36,7 +36,7 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(process.env.PORT ?? 3001); // Inicia o servidor HTTP na porta definida na variável de ambiente PORT ou na porta 3000 por padrão
+  await app.listen(process.env.PORT ?? 3004, '127.0.0.1'); // Inicia o servidor HTTP na porta definida na variável de ambiente PORT ou na porta 3000 por padrão
 }
 
 void bootstrap();
